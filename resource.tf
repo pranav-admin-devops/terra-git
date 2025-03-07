@@ -1,4 +1,4 @@
-resource "azurerm_linux_virtual_machine" "vm" {
+#resource "azurerm_linux_virtual_machine" "vm" {
 #   name                = "pranav-linux"
 #   resource_group_name = azurerm_resource_group.rg.name
 #   location            = azurerm_resource_group.rg.location
