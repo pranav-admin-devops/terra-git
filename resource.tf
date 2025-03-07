@@ -19,13 +19,6 @@ resource "azurerm_subnet" "sub" {
 }
 
 
-resource "azurerm_public_ip" "pip" {
-  name                = "my-pip"
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = azurerm_resource_group.rg.location
-  allocation_method   = "Static"
-}
-
 resource "azurerm_network_interface" "linux-nic" {
   name                = "linux-nic"
   location            = azurerm_resource_group.rg.location
